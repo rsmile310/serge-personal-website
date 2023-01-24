@@ -19,12 +19,12 @@ const BoxStyle = styled(Box)({
   "& .MuiTabs-indicator": {
     display: "none",
   },
-  "& .css-49kukx-MuiButtonBase-root-MuiTab-root": {
+  "& .MuiButtonBase-root .MuiTab-textColorPrimary .MuiTab-root": {
     marginRight: "0 !important",
     color: "#745ACB",
     transition: "all ease 500ms",
   },
-  "& .css-49kukx-MuiButtonBase-root-MuiTab-root.Mui-selected": {
+  "& .Mui-selected": {
     color: "#BACECE",
     background: "rgba(116, 90, 203, 0.74)",
   },
