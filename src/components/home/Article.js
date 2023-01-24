@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import useLocales from "../../hooks/useLocales";
 import { MotionViewport, varFade, varZoom } from "../animate";
 import DefaultBtn from "../DefaultBtn";
+import NewsCard from "../NewsCard";
 
 // ----------------------------------------------------------------------
 
@@ -16,7 +17,7 @@ export default function Article() {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 4,
-    autoplay: true,
+    // autoplay: true,
     // dots: true,
     speed: 1400,
     autoplaySpeed: 2600,
@@ -49,78 +50,60 @@ export default function Article() {
       },
     ],
   };
-  const slideImages = [
+  const articleData = [
     {
-      src: "/assets/images/serge_article.png",
-      title: "adf",
-      date: "adf",
-      desc: "asdf",
+      img: "/assets/images/serge_article.png",
+      title: "Amazing First Title",
+      date: "Jan 29, 2018",
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Est pariatur nemo tempore repellat? Ullam sed officia iure
+      architecto deserunt distinctio, pariatur`,
+      url: "/article/1",
     },
     {
-      src: "/assets/images/serge_article.png",
-      title: "adf",
-      date: "adf",
-      desc: "asdf",
+      img: "/assets/images/serge_article.png",
+      title: "Amazing First Title",
+      date: "Jan 29, 2018",
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Est pariatur nemo tempore repellat? Ullam sed officia iure
+      architecto deserunt distinctio, pariatur`,
+      url: "/article/2",
     },
     {
-      src: "/assets/images/serge_article.png",
-      title: "adf",
-      date: "adf",
-      desc: "asdf",
+      img: "/assets/images/serge_article.png",
+      title: "Amazing First Title",
+      date: "Jan 29, 2018",
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Est pariatur nemo tempore repellat? Ullam sed officia iure
+      architecto deserunt distinctio, pariatur`,
+      url: "/article/3",
     },
     {
-      src: "/assets/images/serge_article.png",
-      title: "adf",
-      date: "adf",
-      desc: "asdf",
+      img: "/assets/images/serge_article.png",
+      title: "Amazing First Title",
+      date: "Jan 29, 2018",
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Est pariatur nemo tempore repellat? Ullam sed officia iure
+      architecto deserunt distinctio, pariatur`,
+      url: "/article/4",
     },
     {
-      src: "/assets/images/serge_article.png",
-      title: "adf",
-      date: "adf",
-      desc: "asdf",
+      img: "/assets/images/serge_article.png",
+      title: "Amazing First Title",
+      date: "Jan 29, 2018",
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Est pariatur nemo tempore repellat? Ullam sed officia iure
+      architecto deserunt distinctio, pariatur`,
+      url: "/article/5",
     },
     {
-      src: "/assets/images/serge_article.png",
-      title: "adf",
-      date: "adf",
-      desc: "asdf",
-    },
-    {
-      src: "/assets/images/serge_article.png",
-      title: "adf",
-      date: "adf",
-      desc: "asdf",
-    },
-    {
-      src: "/assets/images/serge_article.png",
-      title: "adf",
-      date: "adf",
-      desc: "asdf",
-    },
-    {
-      src: "/assets/images/serge_article.png",
-      title: "adf",
-      date: "adf",
-      desc: "asdf",
-    },
-    {
-      src: "/assets/images/serge_article.png",
-      title: "adf",
-      date: "adf",
-      desc: "asdf",
-    },
-    {
-      src: "/assets/images/serge_article.png",
-      title: "adf",
-      date: "adf",
-      desc: "asdf",
-    },
-    {
-      src: "/assets/images/serge_article.png",
-      title: "adf",
-      date: "adf",
-      desc: "asdf",
+      img: "/assets/images/serge_article.png",
+      title: "Amazing First Title",
+      date: "Jan 29, 2018",
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Est pariatur nemo tempore repellat? Ullam sed officia iure
+      architecto deserunt distinctio, pariatur`,
+      url: "/article/6",
     },
   ];
 
@@ -146,8 +129,8 @@ export default function Article() {
     // },
   });
   return (
-    <MotionViewport>
-      <BoxStyle px={3} id="article">
+    <BoxStyle px={3} id="article">
+      <MotionViewport>
         <Box
           maxWidth="1140px"
           // py={{ xs: 6, md: 10 }}
@@ -169,8 +152,14 @@ export default function Article() {
           <Box>
             <m.div variants={varZoom({ durationIn: 1.2 }).in}>
               <Slider {...settings}>
-                {slideImages.map((e, index) => (
-                  <Box component="img" src={e.src} key={index} />
+                {articleData.map((e, index) => (
+                  <NewsCard
+                    img={e.img}
+                    title={e.title}
+                    date={e.date}
+                    desc={e.desc}
+                    url={e.url}
+                  />
                 ))}
               </Slider>
             </m.div>
@@ -185,7 +174,7 @@ export default function Article() {
             </Box>
           </m.div>
         </Box>
-      </BoxStyle>
-    </MotionViewport>
+      </MotionViewport>
+    </BoxStyle>
   );
 }

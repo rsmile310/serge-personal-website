@@ -41,6 +41,11 @@ const BoxStyle = styled(Box)({
   "& .border-box": {
     border: "2px solid #181930",
     borderRadius: "16px",
+    minHeight: "240px",
+    backgroundImage: "url(/assets/images/globe.png)",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "contain",
+    backgroundPosition: "96% 16px",
   },
 });
 

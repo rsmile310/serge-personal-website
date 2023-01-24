@@ -86,9 +86,8 @@ const typography = {
   body2: {
     fontFamily: FONT_PRIMARY,
     fontWeight: 400,
-    lineHeight: 1.5,
+    lineHeight: 1.2,
     fontSize: pxToRem(14),
-    color: "#000",
   },
   caption: {
     fontFamily: FONT_PRIMARY,

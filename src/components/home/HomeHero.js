@@ -3,7 +3,11 @@ import { m } from "framer-motion";
 import { styled } from "@mui/material/styles";
 import { Box, Stack, Typography } from "@mui/material";
 // components
-import { IconButtonAnimate, MotionViewport, varFade } from "../animate";
+import {
+  IconButtonAnimate,
+  MotionViewport,
+  varFade,
+} from "../animate";
 import useLocales from "../../hooks/useLocales";
 import DefaultBtn from "../DefaultBtn";
 import Iconify from "../Iconify";
@@ -14,7 +18,7 @@ const BoxStyle = styled(Box)({
   height: "100vh",
   margin: "0 auto",
   position: "relative",
-  backgroundImage: "url(/assets/images/hero_bg.png)",
+  backgroundImage: "url(/assets/images/hero_bg.jpg)",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center center",

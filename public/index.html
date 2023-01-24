@@ -97,6 +97,27 @@
       .text-purple {
         color: #745acb;
       }
+      /* .serge-name {
+        animation: textAnimation 5s linear 2s infinite alternate;
+      } */
+      .serge-name {
+        text-transform: uppercase;
+        background-image: linear-gradient(-225deg, #bacece 0%, #745acb 67%);
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 3s linear infinite;
+        display: inline-block;
+      }
+
+      @keyframes textclip {
+        to {
+          background-position: -100% center;
+        }
+      }
     </style>
   </head>
 
