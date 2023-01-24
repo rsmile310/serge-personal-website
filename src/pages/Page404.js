@@ -1,13 +1,12 @@
 import { m } from "framer-motion";
-import { Link as RouterLink } from "react-router-dom";
+// import { Link as RouterLink } from "react-router-dom";
 // @mui
 import { styled } from "@mui/material/styles";
-import { Button, Typography, Container } from "@mui/material";
+import { Typography, Container } from "@mui/material";
 // components
 import Page from "../components/Page";
 import { MotionContainer, varBounce } from "../components/animate";
 // assets
-import { PageNotFoundIllustration } from "../assets";
 import DefaultBtn from "../components/DefaultBtn";
 import Image from "../components/Image";
 
