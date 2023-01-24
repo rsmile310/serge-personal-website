@@ -48,7 +48,7 @@ export default function Video() {
               mx="auto"
               sx={{ borderRadius: "16px", overflow: "hidden" }}
             >
-              <Image src="http://greensensitive.com/assets/images/other/video-coming-soon.gif" />
+              <Image src="/assets/images/video-coming-soon.gif" />
             </Box>
           </m.div>
         </Box>
