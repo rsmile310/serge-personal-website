@@ -64,7 +64,7 @@ export default function Book() {
           <m.div variants={varFade({ durationIn: 1.4 }).inDown}>
             <Box mt={{ xs: 3, sm: 5 }} textAlign="center">
               <DefaultBtn
-                text="View All"
+                text="view_all"
                 icon="heroicons:arrow-long-right"
                 href="#"
               />

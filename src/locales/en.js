@@ -1,16 +1,15 @@
-// ----------------------------------------------------------------------
-
-// IF THIS TRANSLATION IS INCORRECT PLEASE IGNORE THIS AS THIS TRANSLATION IS FOR DEMO PURPOSES ONLY
-// We are happy if you can help improve the translation by sending an email to support@minimals.cc.
-
-// ----------------------------------------------------------------------
-
 const en = {
   hero_title1: "hi there!",
   hero_title2: `I’M <span class='serge-name'>SERGE MAURICE LOBRÉAU</span>`,
   hero_title3: `A FOUNDER OF <span class='text-purple'>SAPIAN GROUP</span> & <span class='text-purple'>FLASH GROUP</span>`,
+  get_started: "Get Started",
+  read_more: "Read More",
+  view_all: "View All",
+  africa: "Africa",
+  europe: "Europe",
+  the_world: "The World",
   hero_desc:
-    "If you have NEVER suffered starvation, you will NEVER understand our grit and why enough will NEVER Be enough",
+    "If you have NEVER suffered starvation, you will NEVER understand our grit and why enough will NEVER Be enough.",
   video_section_title: "my videos",
   about_section_title: "about me",
   about_section_desc: `I am Serge Maurice Lobréau,Founder at SAPIAN and FLASH GROUP, I am designing disruptive products and services into the financial area To bring financial inclusion for the common good.`,
@@ -26,7 +25,7 @@ const en = {
   experience_section_desc:
     "I got 15 years of experience where I started within the hedge fund sector, where due to my excellent “Memoire” during my Master’s degree on derivative based wealth creation, made me being head hunted to another important role to sell major restructuring and derivatives based financial products at a country level. Wishing to change from that highly political sector, I explored the popular technology sector to work for Microsoft at their European HQ in Ireland, as a project manager which created a strong foundation for my career in technology.However, it brought me back to my calling into the banking world again, working with major international banks.",
   company_section_title: "My Company & Experience Entrepreneur",
-  company_section_sapian_desc: `Sapian Group is the holding company or various wealth management, asset management, sales channel services and Blockchain associated businesses within the group. The group is licenced in Europe (Estonia) holding eWallet, Exchange and Financial institution licences`,
+  company_section_sapian_desc: `Sapian Group is the holding company or various wealth management, asset management, sales channel services and Blockchain associated businesses within the group. The group is licenced in Europe (Estonia) holding eWallet, Exchange and Financial institution licences.`,
   company_section_flash_desc: `Our solution provides utility pegged coin with a controlled volatility,and exchanger services with the lowest cost in the market. Our technology combines regular financial services and blockchain-powered finance technology to bring users an efficient solution and empowerment in their daily financial transactions.`,
   service_section_title: "services",
   service_item_title1: "Taxes optimization<br/>strategy",

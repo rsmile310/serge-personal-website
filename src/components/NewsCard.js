@@ -89,7 +89,7 @@ export default function NewsCard(props) {
 
           <Box display="flex" justifyContent="end" mt={2}>
             <Typography component="a" href={props.url}>
-              Read More
+              {translate("read_more")}
             </Typography>
           </Box>
         </Box>

@@ -57,7 +57,7 @@ export default function Experience() {
               </m.div>
               <m.div variants={varFade({ durationIn: 1.3 }).inRight}>
                 <DefautlBtn
-                  text="Read More"
+                  text="read_more"
                   icon="heroicons:arrow-long-right"
                   href="#"
                 />

@@ -167,7 +167,7 @@ export default function Article() {
           <m.div variants={varFade({ durationIn: 1.4 }).inRight}>
             <Box mt={{ xs: 3, sm: 5 }} textAlign="center">
               <DefaultBtn
-                text="View All"
+                text="view_all"
                 icon="heroicons:arrow-long-right"
                 href="#"
               />

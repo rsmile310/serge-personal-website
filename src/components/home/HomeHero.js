@@ -121,7 +121,7 @@ export default function HomeHero() {
           <m.div variants={varFade({ durationIn: 1.7 }).inRight}>
             <Box mt={{ xs: 3, sm: 5 }}>
               <DefaultBtn
-                text="Get Started"
+                text="get_started"
                 icon="heroicons:arrow-long-right"
                 href="#video"
                 hreftype="section"
