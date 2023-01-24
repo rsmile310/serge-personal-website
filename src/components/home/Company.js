@@ -82,7 +82,7 @@ export default function Company() {
                   }}
                 >
                   <Image
-                    src="/logo/logo_sapian.svg"
+                    src="/logo/logo_flash.svg"
                     sx={{ width: "278px", mb: 6, mx: "auto" }}
                   />
                   <Typography variant="h3">FLASH GROUP</Typography>
