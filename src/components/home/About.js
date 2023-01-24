@@ -7,7 +7,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
-// import TabPanel from "@mui/lab/TabPanel";
+import TabPanel from "@mui/lab/TabPanel";
 // components
 import { MotionViewport, varBounce, varFade, varFlip } from "../animate";
 import useLocales from "../../hooks/useLocales";
@@ -198,7 +198,7 @@ export default function About() {
               </TabList>
             </m.div>
             <m.div variants={varFade({ durationIn: 1.3 }).inUp}>
-              {/* <TabPanel value="1" sx={{ py: 4, mr: 0 }}>
+              <TabPanel value="1" sx={{ py: 4, mr: 0 }}>
                 <Box className="border-box" p={{ xs: 3, sx: 6 }}>
                   <Typography variant="h3" mb={4}>
                     {translate("about_section_africa_title")}
@@ -227,7 +227,7 @@ export default function About() {
                     {translate("about_section_world_desc")}
                   </Typography>
                 </Box>
-              </TabPanel> */}
+              </TabPanel>
             </m.div>
           </TabContext>
         </Box>
