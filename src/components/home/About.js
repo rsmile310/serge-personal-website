@@ -24,7 +24,7 @@ const BoxStyle = styled(Box)({
     color: "#745ACB",
     transition: "all ease 500ms",
   },
-  "& .Mui-selected": {
+  "& .MuiTab-textColorPrimary .Mui-selected": {
     color: "#BACECE",
     background: "rgba(116, 90, 203, 0.74)",
   },
