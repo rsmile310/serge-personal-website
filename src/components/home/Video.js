@@ -31,9 +31,11 @@ const BoxStyle = styled(Box)({
   },
   "& .slick-prev": {
     left: "10%",
+    zIndex: "3",
   },
   "& .slick-next": {
     right: "10%",
+    zIndex: "3",
   },
   "& .slick-prev:before": {
     fontSize: "43px",
@@ -62,7 +64,7 @@ export default function Video() {
     autoplay: true,
     dots: true,
     speed: 1400,
-    autoplaySpeed: 3600,
+    autoplaySpeed: 1600,
   };
   const videoData = [
     "https://www.youtube.com/embed/x65QvWQN90I?autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fsergenew-gamma.vercel.app&amp;widgetid=1",
