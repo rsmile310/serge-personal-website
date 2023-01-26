@@ -29,6 +29,26 @@ const BoxStyle = styled(Box)({
     height: "100%",
     borderRadius: "24px",
   },
+  "& .slick-prev": {
+    left: "10%",
+  },
+  "& .slick-next": {
+    right: "10%",
+  },
+  "& .slick-prev:before": {
+    fontSize: "43px",
+  },
+  ".slick-next:before": {
+    fontSize: "43px",
+  },
+  "@media (max-width: 600px)": {
+    "& .slick-prev:before": {
+      fontSize: "24px",
+    },
+    ".slick-next:before": {
+      fontSize: "24px",
+    },
+  },
 });
 
 // ----------------------------------------------------------------------
@@ -40,65 +60,17 @@ export default function Video() {
     slidesToShow: 1,
     slidesToScroll: 1,
     // autoplay: true,
-    // dots: true,
+    dots: true,
     speed: 1400,
-    autoplaySpeed: 2600,
+    autoplaySpeed: 3600,
   };
   const videoData = [
-    {
-      img: "/assets/images/serge_article.png",
-      title: "Amazing First Title",
-      date: "Jan 29, 2018",
-      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Est pariatur nemo tempore repellat? Ullam sed officia iure
-      architecto deserunt distinctio, pariatur`,
-      url: "/article/1",
-    },
-    {
-      img: "/assets/images/serge_article.png",
-      title: "Amazing First Title",
-      date: "Jan 29, 2018",
-      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Est pariatur nemo tempore repellat? Ullam sed officia iure
-      architecto deserunt distinctio, pariatur`,
-      url: "/article/2",
-    },
-    {
-      img: "/assets/images/serge_article.png",
-      title: "Amazing First Title",
-      date: "Jan 29, 2018",
-      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Est pariatur nemo tempore repellat? Ullam sed officia iure
-      architecto deserunt distinctio, pariatur`,
-      url: "/article/3",
-    },
-    {
-      img: "/assets/images/serge_article.png",
-      title: "Amazing First Title",
-      date: "Jan 29, 2018",
-      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Est pariatur nemo tempore repellat? Ullam sed officia iure
-      architecto deserunt distinctio, pariatur`,
-      url: "/article/4",
-    },
-    {
-      img: "/assets/images/serge_article.png",
-      title: "Amazing First Title",
-      date: "Jan 29, 2018",
-      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Est pariatur nemo tempore repellat? Ullam sed officia iure
-      architecto deserunt distinctio, pariatur`,
-      url: "/article/5",
-    },
-    {
-      img: "/assets/images/serge_article.png",
-      title: "Amazing First Title",
-      date: "Jan 29, 2018",
-      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Est pariatur nemo tempore repellat? Ullam sed officia iure
-      architecto deserunt distinctio, pariatur`,
-      url: "/article/6",
-    },
+    "https://www.youtube.com/embed/x65QvWQN90I?autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fsergenew-gamma.vercel.app&amp;widgetid=1",
+    "https://www.youtube.com/embed/xPpQISVvQWI?autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fsergenew-gamma.vercel.app&amp;widgetid=3",
+    "https://www.youtube.com/embed/OWVIUyR8IBI?autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fsergenew-gamma.vercel.app&amp;widgetid=5",
+    "https://www.youtube.com/embed/dlj3daa_tvo?autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fsergenew-gamma.vercel.app&amp;widgetid=7",
+    "https://www.youtube.com/embed/OWVIUyR8IBI?autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fsergenew-gamma.vercel.app&amp;widgetid=9",
+    "https://www.youtube.com/embed/Ey7mMijO0rM?autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fsergenew-gamma.vercel.app&amp;widgetid=11",
   ];
   return (
     <MotionViewport>
@@ -144,7 +116,7 @@ export default function Video() {
                       title=" "
                       width="560"
                       height="315"
-                      src="https://www.youtube.com/embed/xPpQISVvQWI?autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fsergenew-gamma.vercel.app&amp;widgetid=3"
+                      src={e}
                       id="widget4"
                     ></iframe>
                   </Box>
