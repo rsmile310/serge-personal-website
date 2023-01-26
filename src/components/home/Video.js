@@ -51,12 +51,10 @@ export default function Video() {
                 <iframe
                   frameborder="0"
                   allowfullscreen="1"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  title="Interview SAPIAN GROUP with Serge Maurice Lobréau I Dubai Universal Exhibition | French"
+                  title=" "
                   width="560"
                   height="315"
                   src="https://www.youtube.com/embed/xPpQISVvQWI?autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fsergenew-gamma.vercel.app&amp;widgetid=3"
-                  id="widget4"
                 ></iframe>
               </div>
             </Box>
