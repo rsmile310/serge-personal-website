@@ -17,7 +17,7 @@ export default function Article() {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 4,
-    // autoplay: true,
+    autoplay: true,
     // dots: true,
     speed: 1400,
     autoplaySpeed: 2600,
