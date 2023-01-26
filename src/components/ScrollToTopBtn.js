@@ -26,6 +26,7 @@ export default function ScrollToTopBtn() {
         right: "24px",
         transition: "opacity ease 500ms",
         opacity: `${showButton ? "1" : "0"}`,
+        zIndex: "3",
       }}
     >
       <IconButtonAnimate onClick={scrollTopHandler}>
