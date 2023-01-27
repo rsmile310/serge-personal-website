@@ -81,7 +81,7 @@ export default function Video() {
           pb={{ xs: 6, md: 10 }}
           pt={{ xs: 12, md: 16 }}
           mt={-6}
-          maxWidth="1140px"
+          maxWidth="800px"
           sx={{ mx: "auto" }}
         >
           <m.div variants={varFade({ durationIn: 1 }).inUp}>
