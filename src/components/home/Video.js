@@ -64,7 +64,7 @@ export default function Video() {
     autoplay: true,
     dots: true,
     speed: 1400,
-    autoplaySpeed: 1600,
+    autoplaySpeed: 4600,
   };
   const videoData = [
     "https://www.youtube.com/embed/x65QvWQN90I?autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fsergenew-gamma.vercel.app&amp;widgetid=1",
