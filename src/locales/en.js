@@ -1,7 +1,7 @@
 const en = {
   hero_title1: "hi there!",
   hero_title2: `I’M <span class='serge-name'>SERGE MAURICE LOBRÉAU</span>`,
-  hero_title3: `A FOUNDER OF <span class='text-purple'>SAPIAN GROUP</span> & <span class='text-purple'>FLASH GROUP</span>`,
+  hero_title3: `THE FOUNDER OF <span class='text-purple'>SAPIAN GROUP</span> & <span class='text-purple'>FLASH GROUP</span>`,
   get_started: "Get Started",
   read_more: "Read More",
   view_all: "View All",
