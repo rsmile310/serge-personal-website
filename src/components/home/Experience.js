@@ -12,6 +12,8 @@ import DefautlBtn from "../DefaultBtn";
 
 const BoxStyle = styled(Box)({
   position: "relative",
+  zIndex: "2",
+  display: "flex",
   background:
     "linear-gradient(261.46deg, #101322 0%, rgba(116, 90, 203, 0.18) 101.6%)",
   boxShadow: "0px 4px 48px rgba(0, 0, 0, 0.15)",
@@ -32,8 +34,18 @@ export default function Experience() {
           maxWidth="1140px"
           sx={{ mx: "auto" }}
         >
-          <Grid container>
-            <Grid item xs={12} lg={7} order={{ xs: 2, lg: 1 }}>
+          <m.div variants={varFade({ durationIn: 1 }).inRight}>
+            <Typography
+              variant="h1"
+              mb={4}
+              textTransform="capitalize"
+              textAlign="center"
+            >
+              {translate("experience_section_title")}
+            </Typography>
+          </m.div>
+          <Grid container spacing={4}>
+            <Grid item xs={12} lg={5} order={{ xs: 2, lg: 1 }}>
               <m.div variants={varFade({ durationIn: 1 }).inLeft}>
                 <Image src="/assets/images/serge_experience.png" />
               </m.div>
@@ -41,15 +53,15 @@ export default function Experience() {
             <Grid
               item
               xs={12}
-              lg={5}
+              lg={7}
               order={{ xs: 1, lg: 2 }}
               mb={{ xs: 3, lg: 0 }}
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+              }}
             >
-              <m.div variants={varFade({ durationIn: 1 }).inRight}>
-                <Typography variant="h1" mb={4} textTransform="capitalize">
-                  {translate("experience_section_title")}
-                </Typography>
-              </m.div>
               <m.div variants={varFade({ durationIn: 1.2 }).inRight}>
                 <Typography variant="body1" mb={4}>
                   {translate("experience_section_desc")}

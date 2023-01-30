@@ -30,7 +30,7 @@ const BoxStyle = styled(Box)({
     flexDirection: "column",
     justifyContent: "center",
   },
-  zIndex: "2",
+  zIndex: "5",
 });
 
 // ----------------------------------------------------------------------

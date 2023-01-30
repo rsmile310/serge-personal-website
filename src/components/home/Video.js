@@ -14,7 +14,7 @@ const BoxStyle = styled(Box)({
   background:
     "linear-gradient(261.46deg, #101322 0%, rgba(116, 90, 203, 0.18) 101.6%)",
   boxShadow: "0px 4px 48px rgba(0, 0, 0, 0.15)",
-  zIndex: "1",
+  zIndex: "4",
   "& .video-wrapper": {
     position: "relative",
     paddingBottom: "56.25%",

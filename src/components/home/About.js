@@ -16,6 +16,7 @@ import Image from "../Image";
 
 const BoxStyle = styled(Box)({
   position: "relative",
+  zIndex: "3",
   "& .MuiTabs-indicator": {
     display: "none",
   },
