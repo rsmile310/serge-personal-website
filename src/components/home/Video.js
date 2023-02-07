@@ -104,8 +104,8 @@ export default function Video() {
                 {videoData.map((e, index) => (
                   <Box className="video-wrapper" key={index}>
                     <iframe
-                      frameborder="0"
-                      allowfullscreen="1"
+                      frameBorder="0"
+                      allowFullScreen="1"
                       allow=" "
                       title=" "
                       width="560"

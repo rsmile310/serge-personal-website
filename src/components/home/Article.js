@@ -154,6 +154,7 @@ export default function Article() {
               <Slider {...settings}>
                 {articleData.map((e, index) => (
                   <NewsCard
+                    key={index}
                     img={e.img}
                     title={e.title}
                     date={e.date}

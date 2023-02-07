@@ -3,11 +3,7 @@ import { m } from "framer-motion";
 import { styled } from "@mui/material/styles";
 import { Box, Stack, Typography } from "@mui/material";
 // components
-import {
-  IconButtonAnimate,
-  MotionViewport,
-  varFade,
-} from "../animate";
+import { IconButtonAnimate, MotionViewport, varFade } from "../animate";
 import useLocales from "../../hooks/useLocales";
 import DefaultBtn from "../DefaultBtn";
 import Iconify from "../Iconify";
@@ -62,7 +58,13 @@ export default function HomeHero() {
   return (
     <MotionViewport>
       <BoxStyle
-        sx={{ backgroundPosition: { xs: "center left", md: "center center" } }}
+        sx={{
+          backgroundPosition: {
+            xs: "center left",
+            md: "center center",
+            overflow: "hidden",
+          },
+        }}
       >
         <Box
           sx={{
@@ -128,6 +130,11 @@ export default function HomeHero() {
               />
             </Box>
           </m.div>
+        </Box>
+        <Box className="night">
+          {[...Array(10)].map((_, index) => (
+            <div key={index} className="shooting_star"></div>
+          ))}
         </Box>
       </BoxStyle>
     </MotionViewport>
